@@ -1,0 +1,42 @@
+{
+  "name": "@elvatis_com/agent-backends",
+  "version": "1.0.0",
+  "description": "Shared agent backend abstraction for CLI-based AI agent spawning. Used by conduit-vscode and aahp-runner.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "cli",
+    "claude",
+    "gemini",
+    "codex",
+    "opencode",
+    "backend",
+    "subprocess"
+  ],
+  "author": "Elvatis <emre.kohler@elvatis.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elvatis/agent-backends"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "typescript": "^5.5.0",
+    "vitest": "^1.6.0"
+  }
+}
